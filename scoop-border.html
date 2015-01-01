@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Custom scoop border style - responsive, Custom & dynamic border style - fit in height, Custom border corner - double stroke. </title>
+<!-- With the help of bg images - it is done. -->
+</head>
+<body>
+<!-- Start border#1 style -->
+<div class="border-style">
+	<div class="top-left">
+	</div>
+	<div class="top-middle">
+	</div>
+	<div class="top-right">
+	</div>
+	<div class="middle-left">
+	</div>
+	<div class="middle-middle">
+		<p>
+			Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+		</p>
+		<p>
+			Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+		</p>
+	</div>
+	<div class="middle-right">
+	</div>
+	<div class="bottom-left">
+	</div>
+	<div class="bottom-middle">
+	</div>
+	<div class="bottom-right">
+	</div>
+</div>
+<!-- End border#1 style -->
+<style type="text/css">
+body {
+	background: #fb9dc4;
+}
+.border-style {
+	clear: both;
+}
+.top-left {
+	float: left;
+	background: url(img/top-left.png);
+	width: 30px;
+	height: 30px;
+}
+.top-middle {
+	float: left;
+	background: url(img/top-middle.png);
+	height: 30px;
+	width: 84%;
+}
+.top-right {
+	float: left;
+	background: url(img/top-right.png);
+	width: 30px;
+	height: 30px;
+}
+.middle-left {
+	clear: both;
+	float: left;
+	background: url(img/left.png);
+	width: 30px;
+	height: 20px;
+}
+.middle-middle {
+	float: left;
+	background: #fff;
+	width: 84%;
+}
+.middle-right {
+	float: left;
+	background: url(img/right.png);
+	width: 30px;
+	height: 20px;
+}
+.bottom-left {
+	clear: both;
+	float: left;
+	background: url(img/bottom-left.png);
+	width: 30px;
+	height: 30px;
+}
+.bottom-middle {
+	float: left;
+	background: url(img/bottom-middle.png);
+	height: 30px;
+	width: 84%;
+}
+.bottom-right {
+	float: left;
+	background: url(img/bottom-right.png);
+	width: 30px;
+	height: 30px;
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript">
+  $(document).ready(function(){
+        var h = $(".middle-middle").height();
+        $(".middle-left").css("height",h);        
+        $(".middle-right").css("height",h);
+;})
+</script>
+</body>
+</html>
